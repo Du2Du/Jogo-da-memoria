@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.programacao.jogo.MainController">
+   <top>
+      <Label text="Adicionar Jogadores" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="addPlayerButton" disable="true" mnemonicParsing="false" onAction="#addPlayer" text="Adicionar outro jogador" />
+            <Button fx:id="initializeGameButton" disable="true" mnemonicParsing="false" onAction="#initializeGame" text="Iniciar Jogo" />
+        </buttons>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </ButtonBar>
+   </bottom>
+   <center>
+      <TextField fx:id="playerName" maxWidth="300.0" onKeyPressed="#toggleDisableButtons" prefHeight="25.0" prefWidth="253.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </TextField>
+   </center>
+   <left>
+      <Label text="Nome:" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="100.0" />
+         </BorderPane.margin>
+      </Label>
+   </left>
+</BorderPane>

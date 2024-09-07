@@ -8,8 +8,11 @@ module com.programacao.jogo {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
+   // requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires static lombok;
+    requires jdk.compiler;
+    requires java.desktop;
 
     opens com.programacao.jogo to javafx.fxml;
     exports com.programacao.jogo;
